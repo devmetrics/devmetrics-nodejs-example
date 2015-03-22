@@ -1,1 +1,1 @@
-Sample MEAN project with metrics and logging enabled
+Sample MEAN project with great stuff
