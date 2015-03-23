@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+  db: 'mongodb://dm_user:dm_secret@ds031581.mongolab.com:31581/dm_mongo',
   debug: true,
   logging: {
     format: 'tiny'
@@ -9,7 +9,7 @@ module.exports = {
   //  aggregate: 'whatever that is not false, because boolean false value turns aggregation off', //false
   aggregate: false,
   mongoose: {
-    debug: false
+    debug: true
   },
   app: {
     name: 'MEAN - FullStack JS - Development'
