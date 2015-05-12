@@ -48,7 +48,7 @@
     "serve-favicon": "2.2.0",
     "swig": "1.4.2",
     "view-helpers": "0.1.5",
-    "devmetrics": "*"
+    "devmetrics": "0.1.25"
   },
   "devDependencies": {
     "require-dir":"latest",
