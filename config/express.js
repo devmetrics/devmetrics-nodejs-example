@@ -34,12 +34,8 @@ module.exports = function(app, db) {
   // Enable compression on bower_components
   app.use('/bower_components', express.static(config.root + '/bower_components'));
 
-  // Adds logging based on logging config in config/env/ entry
-  require('./middlewares/logging')(app, config.logging);
-
-  // Adds cool stuff
-  var devmetrics_options = {'host': 'ec2-54-152-18-234.compute-1.amazonaws.com', 'token': 'token-123127'};
-  require('devmetrics')(app, devmetrics_options);
+  // Adds good logging and metrics
+  require('devmetrics')({'app': app, 'token': 'example-app'});
 
   // assign the template engine to .html files
   app.engine('html', consolidate[config.templateEngine]);
