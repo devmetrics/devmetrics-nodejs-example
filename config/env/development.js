@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://dm_user:dm_secret@ds031581.mongolab.com:31581/dm_mongo',
+  db: 'mongodb://demo:demo@ds031872.mongolab.com:31581/demo',
   debug: true,
   logging: {
     format: 'tiny'
